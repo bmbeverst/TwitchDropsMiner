@@ -23,8 +23,8 @@ if TYPE_CHECKING:
     from channel import Channel
     from inventory import DropsCampaign, TimedDrop
 
-WINDOW_WIDTH = 80
-WINDOW_HEIGHT = 9
+WINDOW_WIDTH = 160
+WINDOW_HEIGHT = 18
 
 
 class _LoggingHandler(logging.Handler):
