@@ -1467,7 +1467,7 @@ class Twitch:
             kwargs["proxy"] = self.settings.proxy
         logger.debug(f"Request: ({method=}, {url=}, {kwargs=})")
         session_timeout = timedelta(seconds=session.timeout.total or 0)
-        backoff = ExponentialBackoff(maximum=3*60)
+        backoff = ExponentialBackoff(maximum=3*60, variance=.3)
         for delay in backoff:
             if self.gui.close_requested:
                 raise ExitRequest()
@@ -1690,7 +1690,7 @@ class Twitch:
             return drops[0]
         return None
 
-    async def get_live_streams(self, game: Game, *, limit: int = 30) -> list[Channel]:
+    async def get_live_streams(self, game: Game, *, limit: int = 10) -> list[Channel]:
         response = await self.gql_request(
             GQL_OPERATIONS["GameDirectory"].with_variables({
                 "limit": limit,
