@@ -44,16 +44,13 @@ class BaseLoginForm(metaclass=ABCMeta):
 
 
 class BaseTrayIcon(metaclass=ABCMeta):
-    @abstractmethod
-    def is_tray(self):
-        pass
 
     @abstractmethod
     def get_title(self, drop):
         pass
 
     @abstractmethod
-    def start(self):
+    def _start(self):
         pass
 
     @abstractmethod

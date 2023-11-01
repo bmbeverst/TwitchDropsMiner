@@ -103,13 +103,10 @@ class TrayHandler(BaseTrayIcon):
     Not implemented because not required in CLI
     """
 
-    def is_tray(self) -> bool:
-        pass
-
     def get_title(self, drop: TimedDrop | None) -> str:
         pass
 
-    def start(self):
+    def _start(self):
         pass
 
     def stop(self):
