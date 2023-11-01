@@ -133,3 +133,7 @@ if they aren't already there. Doing so ensures proper markdown rendering on Gith
 @Nollasko - For the entirety of the Ukrainian (Українська) translation.  
 @casungo - For the entirety of the Italian (Italiano) translation.  
 @Bamboozul - For the entirety of the Arabic (العربية) translation.
+
+
+## No Warranty of the Project Twitch Drop Miner.
+The Issuer makes no express or implied warranty of any kind whatsoever with respect to the Project Twitch Drop Miner, including, but not limited to, the merchantability thereof or the fitness thereof for any particular purposes; the design or condition thereof; the workmanship, quality or capacity thereof; compliance thereof with the requirements of any law, rule, specification or contract pertaining thereto; patent infringement; latent defects; or that the proceeds derived from the sale of the Bonds will be sufficient to pay in full for same. 
