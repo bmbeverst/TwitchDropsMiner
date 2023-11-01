@@ -158,7 +158,7 @@ class InventoryHandler(BaseInventoryOverview):
         return status_text, status_color
 
     @staticmethod
-    def get_progress(drop: TimedDrop) -> tuple[str, str]:
+    def update_progress(drop: TimedDrop) -> tuple[str, str]:
         progress_color = ""
         if drop.is_claimed:
             progress_color = "green"
